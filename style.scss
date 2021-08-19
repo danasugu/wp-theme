@@ -43,3 +43,31 @@ a {
 .wrapper {
   display: grid;
 }
+
+.header {
+  grid-area: header;
+}
+
+.mobile-menu {
+  grid-area: mobile-menu;
+}
+
+.slogan {
+  grid-area: slogan;
+}
+
+.social {
+  grid-area: social;
+}
+
+.author {
+  grid-area: author;
+}
+
+.container {
+  grid-area: container;
+}
+
+.footer {
+  grid-area: footer;
+}
