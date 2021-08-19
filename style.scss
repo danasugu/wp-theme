@@ -13,6 +13,7 @@ body {
   font-family: 'Source Serif Pro', serif;
   font-size: 1.1em;
   line-height: 28px;
+  // background-color: red;
 }
 
 img {
@@ -51,10 +52,15 @@ a {
     'social social'
     'container container'
     'foooter footer';
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 25px;
+  box-sizing: border-box;
 }
 
 .header {
   grid-area: header;
+  padding: 40px 0;
 }
 
 .mobile-menu {
