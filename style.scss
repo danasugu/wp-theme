@@ -65,10 +65,18 @@ a {
 
 .mobile-menu {
   grid-area: mobile-menu;
+  display: grid;
+  grid-template: 1fr;
+  align-self: center;
+  justify-self: end;
+  font-size: 0.8em;
 }
 
 .slogan {
   grid-area: slogan;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid $secondary-color;
 }
 
 .social {
