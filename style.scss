@@ -213,17 +213,18 @@ input {
     li {
       padding: 20px;
       position: relative;
-    }
-    &:not(:last-child):after {
-      position: absolute;
-      transform: rotate(90deg);
-      content: ' | ';
-      left: 0;
-      right: 0;
-      top: 53px;
-      color: $secondary-color;
+      &:not(:last-child):after {
+        position: absolute;
+        transform: rotate(90deg);
+        content: ' | ';
+        left: 0;
+        right: 0;
+        top: 53px;
+        color: $secondary-color;
+      }
     }
     a {
+      padding: 20px;
       text-decoration: none;
     }
   }
