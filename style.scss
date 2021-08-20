@@ -121,7 +121,7 @@ input {
   grid-area: social;
   display: grid;
   grid-template-rows: 1fr;
-  grid-area: 'newsletter' 'networks';
+  grid-template-areas: 'newsletter' 'networks';
   grid-row-gap: 20px;
   border-top: 1px solid $secondary-color;
   border-bottom: 1px solid $secondary-color;
@@ -161,6 +161,14 @@ input {
 }
 
 @media screen and (min-width: 736px) {
+  .social {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 'newsletter networks';
+
+    .networks {
+      margin-bottom: 0;
+    }
+  }
   .author {
     grid-template-areas: 'author-image author-content';
   }
