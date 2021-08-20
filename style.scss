@@ -44,6 +44,15 @@ a {
 
 input {
   font-family: inherit;
+  border: 0;
+  font-size: 1.1em;
+  height: 65px;
+  padding: 10px;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: $secondary-color;
+  }
 }
 
 .wrapper {
@@ -95,14 +104,16 @@ input {
   grid-template-areas:
     'author-image author-image'
     'author-content author-content ';
+
   img {
     border-radius: $image-radius;
   }
+
   .author-image {
-    grid-area: 'author-image';
+    grid-area: author-image;
   }
   .author-content {
-    grid-area: 'author-content';
+    grid-area: author-content;
   }
 }
 
@@ -128,8 +139,16 @@ input {
     }
   }
   .networks {
-    grid-area: 'networks';
-    display: grid;
+    grid-area: networks;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14px;
+
+    a {
+      border: 1px solid #000;
+      flex-grow: 1;
+    }
   }
 }
 
