@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300&display=swap');
 
+$image-radius: 20px;
 $primary-color: #000;
 $primary-color-hover: #333;
 $secondary-color: #d9d9d9;
@@ -19,7 +20,6 @@ body {
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 20px;
 }
 
 h1,
@@ -91,6 +91,9 @@ a {
   grid-template-areas:
     'author-image author-image'
     'author-content author-content ';
+  img {
+    border-radius: $image-radius;
+  }
   .author-image {
     grid-area: 'author-image';
   }
@@ -101,6 +104,25 @@ a {
 
 .social {
   grid-area: social;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-area: 'newsletter' 'networks';
+  grid-row-gap: 20px;
+  border-top: 1px solid $secondary-color;
+  border-bottom: 1px solid $secondary-color;
+  .newsletter {
+    grid-area: 'newsletter';
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    .subscribe-button {
+      
+    }
+  }
+  .networks {
+    grid-area: 'networks';
+    display: grid;
+  }
 }
 
 .container {
@@ -113,6 +135,6 @@ a {
 
 @media screen and (min-width: 736px) {
   .author {
-    grid-template-areas: 'author-image author-content  ';
+    grid-template-areas: 'author-image author-content';
   }
 }
