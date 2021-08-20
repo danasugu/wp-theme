@@ -42,6 +42,10 @@ a {
   }
 }
 
+input {
+  font-family: inherit;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -115,8 +119,12 @@ a {
     display: grid;
     grid-template-columns: 2fr 1fr;
 
+    .subscribe-input {
+    }
+
     .subscribe-button {
-      
+      background-color: $primary-color;
+      color: #fff;
     }
   }
   .networks {
