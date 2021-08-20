@@ -156,6 +156,27 @@ input {
   grid-area: container;
 }
 
+.article {
+  display: grid;
+  grid-gap: 6%;
+  padding: 25% 0;
+  border-bottom: 1px solid $secondary-color;
+  grid-template-areas: 'thumbnail' 'content';
+
+  .thumbnail {
+    grid-area: thumbnail;
+    height: 217px;
+
+    img {
+      border-radius: $image-radius;
+    }
+  }
+
+  .content {
+    grid-area: content;
+  }
+}
+
 .footer {
   grid-area: footer;
 }
