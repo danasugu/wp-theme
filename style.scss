@@ -198,6 +198,37 @@ input {
   text-align: center;
 }
 
+#toggleMyMenu {
+  font-size: 1.6em;
+  position: absolute;
+  top: 140px;
+  background-color: #fff;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+
+  ul {
+    list-style: none;
+    li {
+      padding: 20px;
+      position: relative;
+    }
+    &:not(:last-child):after {
+      position: absolute;
+      transform: rotate(90deg);
+      content: ' | ';
+      left: 0;
+      right: 0;
+      top: 53px;
+      color: $secondary-color;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
 @media screen and (min-width: 736px) {
   .article {
     grid-template-columns: 1fr 1fr;
