@@ -90,7 +90,7 @@ a {
   padding: 25px 0;
   grid-template-areas:
     'author-image author-image'
-    'author-content author-content';
+    'author-content author-content ';
   .author-image {
     grid-area: 'author-image';
   }
