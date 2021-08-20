@@ -88,10 +88,10 @@ a {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 6%;
+  padding: 25px 0;
   grid-template-areas:
     'author-image author-image'
     'author-content author-content';
-
   .author-image {
     grid-area: 'author-image';
   }
