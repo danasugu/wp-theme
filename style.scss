@@ -125,13 +125,11 @@ input {
   grid-row-gap: 20px;
   border-top: 1px solid $secondary-color;
   border-bottom: 1px solid $secondary-color;
+
   .newsletter {
-    grid-area: 'newsletter';
+    grid-area: newsletter;
     display: grid;
     grid-template-columns: 2fr 1fr;
-
-    .subscribe-input {
-    }
 
     .subscribe-button {
       background-color: $primary-color;
@@ -144,14 +142,16 @@ input {
     justify-content: center;
     align-items: center;
     margin-bottom: 14px;
+    height: 56px;
 
     a {
       border: 1px solid #000;
       flex-grow: 1;
+      text-align: center;
+      flex-basis: 0;
     }
   }
 }
-
 .container {
   grid-area: container;
 }
