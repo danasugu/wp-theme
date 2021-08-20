@@ -84,8 +84,7 @@ a {
 .author {
   grid-area: author;
   display: grid;
-  // grid-template-columns: 1fr 1fr;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr; // grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 6%;
   padding: 25px 0;
@@ -110,4 +109,10 @@ a {
 
 .footer {
   grid-area: footer;
+}
+
+@media screen and (min-width: 736px) {
+  .author {
+    grid-template-areas: 'author-image author-content  ';
+  }
 }
