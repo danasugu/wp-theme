@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 
 
-<div class="slogan">Everything a writer needs.</div>
+<!-- <div class="slogan">Everything a writer needs.</div> -->
 
     <div class="author">
       <div class="author-image">
@@ -13,43 +13,24 @@
       </div>
     </div>
 
-    <div class="social">
-      <div class="newsletter">
-        <input type="text" placeholder="Email newsletter" class="subscribe-input">
-        <input type="submit" value="Submit" name="subscribe" class='subscribe-button'>
-      </div>
-      <div class="networks">
-        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social/facebook.svg" alt="Facebook" /></a>
-        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social/twitter.svg" alt="Twitter" /></a>
-        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social/instagram.svg" alt="Instagram" /></a>
-        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social/search.svg" alt="Search" /></a>
-      </div>
-    </div>
+    <?php
+    if (have_posts()) {
+        while (have_posts()) : the_post(); ?>
 
-    <div class="container">
+
+ 
       <div class="article">
         <div class="thumbnail">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/1.jpg" alt="img 3">
+          <?php the_post_thumbnail('medium'); ?>
         </div>
         <div class="content">
-          <h2>Lorem, ipsum.</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas alias minus dicta ullam distinctio quam
-            nemo non? Minus, officia? Numquam?</p>
-          <div class="button">More+</div>
+          <h2><?php the_title(); ?></h2>
+          <p><?php the_excerpt(); ?></p>
+          <a href="<?php the_permalink(); ?>" class="button">More+</a>
         </div>
       </div>
 
-      <div class="container">
-        <div class="article">
-          <div class="thumbnail">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="img 3">
-          </div>
-          <div class="content">
-            <h2>Lorem, ipsum.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas alias minus dicta ullam distinctio quam
-              nemo non? Minus, officia? Numquam?</p>
-            <div class="button">More+</div>
-          </div>
-        </div>
+ <?php endwhile;
+    }?> 
 
 <?php get_footer(); ?>
