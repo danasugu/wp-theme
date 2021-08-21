@@ -1,6 +1,6 @@
 <?php
 
-
+/* adding CSS */
 function basic_enqueue_styles() {
   wp_register_style( 'styles', get_template_directory_uri() . '/css/styles.css' );
   $depedencies = array('styles');
@@ -8,6 +8,10 @@ function basic_enqueue_styles() {
 
 }
 
+function basic_enqueue_scripts() {
+  $dependencies = array('javascript');
+  wp_enqueue_script('bootstrap' get_template_directory_uri() . '/js/scripts.js', $depedencies);
+}
 add_action( 'wp_enqueue', 'basic_enqueue_styles');
 
 ?>
