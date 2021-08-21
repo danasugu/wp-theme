@@ -19,7 +19,7 @@
       <img src="images/menu.svg" alt="Menu">Menu
     </div>
 
-    <!-- <div id="toggleMyMenu">
+    <div id="toggleMyMenu" style="display: none;">
       <ul>
         <li><a href="#">HOME</a></li>
         <li><a href="#">ABOUT</a></li>
@@ -29,7 +29,7 @@
         <li><a href="#">PODCAST</a></li>
         <li><a href="#">DONATE</a></li>
       </ul>
-    </div> -->
+    </div>
 
     <div class="slogan">Everything a writer needs.</div>
 
