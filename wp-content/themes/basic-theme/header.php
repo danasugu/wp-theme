@@ -12,11 +12,11 @@
   <div class="wrapper">
 
     <div class="header">
-      <img src="images/logo.svg" alt="Basic WP Website">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="Basic WP Website">
     </div>
 
     <div class="mobile-menu">
-      <img src="images/menu.svg" alt="Menu">Menu
+      <img src="<?php echo get_template_directory_uri(); ?>/images/menu.svg" alt="Menu">Menu
     </div>
 
     <div id="toggleMyMenu" style="display: none;">
