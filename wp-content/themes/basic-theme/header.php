@@ -21,7 +21,11 @@
 
     <div id="toggleMyMenu" style="display: none;">
 
-    
+    <?php
+          wp_nav_menu( array ( 'theme_location' => 
+          'my-custom-menu', 'container-class' => 
+          'custom-menu-class'));
+    ?>
 
       <!-- <ul>
         <li><a href="#">HOME</a></li>
