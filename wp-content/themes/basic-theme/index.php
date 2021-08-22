@@ -40,7 +40,7 @@
         <div class="content">
           <h2><?php the_title(); ?></h2>
           <p><?php the_excerpt(); ?></p>
-          <a href="<?php the_permalink(); ?>" class="button">More+</a>
+          <a class="button" href="<?php the_permalink(); ?>" >More+</a>
         </div>
       </div>
 <?php endif; ?>
