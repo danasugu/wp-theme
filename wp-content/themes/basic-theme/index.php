@@ -1,9 +1,6 @@
 
 <?php get_header(); ?>
 
-
-<!-- <div class="slogan">Everything a writer needs.</div> -->
-
     <div class="author">
       <div class="author-image">
         <img src="<?php echo get_template_directory_uri(); ?>/images/author.jpg" alt="author">
@@ -26,15 +23,19 @@
       </div>
     </div>
 
-    <?php
-    if (have_posts()) {
-        while (have_posts()) : the_post(); ?>
+    <?php 
+    if ( have_posts() ) : 
+        while ( have_posts() ) : the_post(); 
+    ?>
 
-
+<?php if ( has_post_thumbnail() ) : ?>
+    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+        <?php the_post_thumbnail(); ?>
+    </a>
  
       <div class="article">
         <div class="thumbnail">
-          <?php the_post_thumbnail('medium'); ?>
+          <?php the_post_thumbnail( 'medium' );  ?>
         </div>
         <div class="content">
           <h2><?php the_title(); ?></h2>
@@ -42,8 +43,9 @@
           <a href="<?php the_permalink(); ?>" class="button">More+</a>
         </div>
       </div>
+<?php endif; ?>
+    <?php  endwhile; 
+    endif; 
+    ?>} 
 
- <?php endwhile;
-    }?> 
-
-<?php get_footer(); ?>
+<?php get_footer(); ?>?> 

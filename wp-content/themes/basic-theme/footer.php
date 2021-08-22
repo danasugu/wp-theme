@@ -7,7 +7,7 @@
 <? wp_footer(); ?>
 
 <script>
-  function toogleMenu() {
+  function togleMenu() {
     var x = document.getElementById("toggleMyMenu");
       if (x.style === "none") {
         x.style = "block";
