@@ -34,6 +34,6 @@ add_action( 'wp_enqueue', 'scripts' );
 // add_action( 'wp_enqueue', 'bassic_enqueue_scripts');
 
 
-add_theme_support('post-thumnails');
+add_theme_support( 'post-thumbnails' );
 
 ?>

@@ -3,7 +3,7 @@
 
 
 <!-- <div class="slogan">Everything a writer needs.</div> -->
-
+<!-- 
     <div class="author">
       <div class="author-image">
         <img src="<?php echo get_template_directory_uri(); ?>/images/author.jpg" alt="author">
@@ -11,7 +11,7 @@
       <div class="author-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore blanditiis velit,
         vel assumenda.
       </div>
-    </div>
+    </div> -->
 
     <?php
     if (have_posts()) {
