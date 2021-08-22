@@ -3,7 +3,7 @@
 
 
 <!-- <div class="slogan">Everything a writer needs.</div> -->
-<!-- 
+
     <div class="author">
       <div class="author-image">
         <img src="<?php echo get_template_directory_uri(); ?>/images/author.jpg" alt="author">
@@ -11,7 +11,20 @@
       <div class="author-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore blanditiis velit,
         vel assumenda.
       </div>
-    </div> -->
+    </div>
+
+      <div class="social">
+      <div class="newsletter">
+        <input type="text" placeholder="Email newsletter" class="subscribe-input">
+        <input type="submit" value="Submit" name="subscribe" class='subscribe-button'>
+      </div>
+      <div class="networks">
+        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social/facebook.svg" alt="Facebook" /></a>
+        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social/twitter.svg" alt="Twitter" /></a>
+        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social/instagram.svg" alt="Instagram" /></a>
+        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social/search.svg" alt="Search" /></a>
+      </div>
+    </div>
 
     <?php
     if (have_posts()) {

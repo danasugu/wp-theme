@@ -29,7 +29,7 @@ add_action('wp_enqueue_scripts', 'scripts');
 //   wp_enqueue_script('bootstrap' get_template_directory_uri() . '/js/scripts.js', $depedencies);
 // }
 
-add_action( 'wp_enqueue', 'scripts' );
+add_action( 'wp_enqueue_style', 'scripts' );
 
 // add_action( 'wp_enqueue', 'bassic_enqueue_scripts');
 
