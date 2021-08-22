@@ -40,6 +40,6 @@
         <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social/search.svg" alt="Search" /></a>
       </div>
     </div>
-
+  
 
 <?php get_footer(); ?> 

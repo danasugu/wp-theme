@@ -5,7 +5,8 @@
 
 
 <? wp_footer(); ?>
-
+ </div> 
+ 
 <script>
   function togleMenu() {
     var x = document.getElementById("toggleMyMenu");
@@ -16,3 +17,5 @@
       }
   }
 </script>
+</body>
+</html>

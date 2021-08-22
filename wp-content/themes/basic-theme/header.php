@@ -19,7 +19,7 @@
       <img src="<?php echo get_template_directory_uri(); ?>/images/menu.svg" alt="Menu">Menu
     </div>
 
-    <div id="toggleMyMenu" style="display: none;">
+    <div id="toggleMyMenu">
 
     <?php
     wp_nav_menu( array( 
