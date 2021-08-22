@@ -20,7 +20,10 @@
     </div>
 
     <div id="toggleMyMenu" style="display: none;">
-      <ul>
+
+    
+
+      <!-- <ul>
         <li><a href="#">HOME</a></li>
         <li><a href="#">ABOUT</a></li>
         <li><a href="#">GALLERY</a></li>
@@ -28,7 +31,7 @@
         <li><a href="#">BLOG</a></li>
         <li><a href="#">PODCAST</a></li>
         <li><a href="#">DONATE</a></li>
-      </ul>
+      </ul> -->
     </div>
 
     <div class="slogan">Everything a writer needs.</div>
