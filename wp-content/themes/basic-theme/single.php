@@ -27,7 +27,7 @@
     endif; 
     ?>
 
-// social
+
       <div class="social">
       <div class="newsletter">
         <input type="text" placeholder="Email newsletter" class="subscribe-input">
@@ -40,5 +40,6 @@
         <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/social/search.svg" alt="Search" /></a>
       </div>
     </div>
+
 
 <?php get_footer(); ?> 

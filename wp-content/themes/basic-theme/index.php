@@ -32,7 +32,7 @@
     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
         <?php the_post_thumbnail(); ?>
     </a>
- 
+
       <div class="article">
         <div class="thumbnail">
           <?php the_post_thumbnail( 'medium' );  ?>
@@ -48,4 +48,5 @@
     endif; 
     ?>
 
+  </div>
 <?php get_footer(); ?> 
