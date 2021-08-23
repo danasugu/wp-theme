@@ -46,7 +46,9 @@
 
     <?php  endwhile; } ?> 
 
-
-    <?php echo paginate_links(); ?>
+<nav class="pagination">
+  <?php echo paginate_links(); ?>
+</nav>
+    
 
 <?php get_footer(); ?> 
