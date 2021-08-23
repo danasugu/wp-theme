@@ -230,9 +230,9 @@ input {
   }
 }
 
-nav .pagination {
+nav.pagination {
   display: grid;
-  grid-template-columns: repeat(auto-fit);
+  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
 }
 
 @media screen and (min-width: 736px) {
