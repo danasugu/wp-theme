@@ -44,6 +44,7 @@
         </div>
       </div>
 
-    <?php  endwhile; }
-    ?> 
+    <?php  endwhile; } ?> 
+
+    
 <?php get_footer(); ?> 
