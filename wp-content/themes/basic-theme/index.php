@@ -24,11 +24,11 @@
     </div>
 
     <?php 
-    if ( have_posts() ) : 
+    if ( have_posts() ) {
         while ( have_posts() ) : the_post(); 
     ?>
 
-<?php if ( has_post_thumbnail() ) : ?>
+
     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
         <?php the_post_thumbnail(); ?>
     </a>
@@ -43,8 +43,7 @@
           <a class="button" href="<?php the_permalink(); ?>" >More+</a>
         </div>
       </div>
-<?php endif; ?>
-    <?php  endwhile; 
-    endif; 
+
+    <?php  endwhile; }
     ?> 
 <?php get_footer(); ?> 
