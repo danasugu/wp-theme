@@ -178,6 +178,10 @@ input {
     .content {
       grid-area: content;
     }
+
+    .content > p {
+      width: 30%;
+    }
   }
 }
 
@@ -233,6 +237,7 @@ input {
 nav.pagination {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+  text-align: center;
 }
 
 @media screen and (min-width: 736px) {

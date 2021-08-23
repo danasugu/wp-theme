@@ -44,6 +44,18 @@
         </div>
       </div>
 
+      <div class="article">
+               <div class="thumbnail">
+          <?php the_post_thumbnail( 'medium' );  ?>
+        </div>
+                <div class="content">
+                  <h2><?php the_title(); ?></h2>
+
+                   <p><?php the_excerpt(); ?></p>
+                    <div class="button">More +</div>
+                </div>
+            </div>
+
     <?php  endwhile; } ?> 
 
 <nav class="pagination">
