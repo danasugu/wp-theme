@@ -3,10 +3,10 @@
   <p>@ Basic WP Theme 2021 / All Rights Reserved </p>
 </div>
 
-
+</div> 
 <? wp_footer(); ?>
- </div> 
- 
+
+
 <script>
   function togleMenu() {
     var x = document.getElementById("toggleMyMenu");
