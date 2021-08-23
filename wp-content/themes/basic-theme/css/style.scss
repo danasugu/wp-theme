@@ -238,6 +238,11 @@ nav.pagination {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
   text-align: center;
+
+  a,
+  span {
+    padding: 15px 0;
+  }
 }
 
 @media screen and (min-width: 736px) {
